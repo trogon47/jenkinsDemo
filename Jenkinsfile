@@ -1,7 +1,7 @@
 pipeline {
     agent { 
         node {
-            label 'builtin'
+            docker { image 'node:16-alpone' }
             }
       }
     stages {
